@@ -77,15 +77,20 @@
                 galleryDisplaySection.removeClass('open');
                 galleryDisplaySection.height(0);
 
-                //if the clicked item was not the one already open, open it.
+                //after it has animated out, remove it
+                setTimeout(function () {
+                  galleryDisplaySection.remove();
+                },600);
+
+                //if the clicked item was not the one already open, open it after the previous one has closed.
                 if (!$this.hasClass('gallery__item--open')) {
                   setTimeout(function () {
-                    galleryDisplaySection.remove();
                     openSubgallery($this);
                   },600);
                 }
 
-                $this.removeClass('gallery__item--open');
+                galleryItems.removeClass('gallery__item--open');
+
             } else {
                 openSubgallery($this);
             }
