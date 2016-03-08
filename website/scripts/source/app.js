@@ -27,6 +27,10 @@
             });
         });
 
+
+        //lock height of top section
+        $('.jumbo-presentation').height($('.jumbo-presentation').height());
+
     });
 
 })();

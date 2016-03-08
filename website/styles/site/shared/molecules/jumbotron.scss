@@ -1,5 +1,5 @@
-﻿.jumbo-background {
-    padding-bottom: 100vh;
+.jumbo-background {
+    padding-bottom: 80vh;
     height: calc(100vh - 70px);
     background-image: url('../assets/hero.jpg');
     background-size: contain;
@@ -40,12 +40,15 @@
 
     h1 {
         margin-bottom: 40px;
-        font-size: 30px;
+        font-size: 40px;
         color: #eee;
 
         @media (min-width: 700px) {
-            font-size: 40px;
+            font-size: 50px;
         }
+    }
+    h4 {
+      font-size: 30px;
     }
     .btn {
         margin-top: 80px;
