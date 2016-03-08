@@ -1,0 +1,42 @@
+body {
+  font-size: $bf;
+  font-family: 'Merriweather', sans-serif;
+
+  @media (min-width: $bp-small) {
+    font-size: $bf-large;
+  }
+}
+
+p, a, button, strong, em, h1, h2, h3, h4, label {
+  margin: 0;
+  line-height: 1.2;
+}
+
+p, a, button, strong, em, label {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+a, button {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+
+h2, legend {
+  font-size: 2em;
+  margin-bottom: 0.75em;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}

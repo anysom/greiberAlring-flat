@@ -1,0 +1,64 @@
+﻿.bio {
+  &__frame {
+    width: 100%;
+    padding: 8px;
+    background: #ccc;
+    border-radius: 50%;
+  }
+  
+  &__image {
+    height: 0;
+    width: 100%;
+    padding-bottom: 100%;
+    background: url(../assets/portrait.jpg);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 50%;
+  }
+
+  .split-bio {
+      display: none;
+
+      @media (min-width: 768px) {
+          display: block;
+      }
+
+      .bio__fact {
+          margin-bottom: 40px;
+      }
+
+      &--left {
+          .bio__fact {
+              text-align: right;
+              margin-right: 20px;
+          }
+      }
+
+      &--right {
+          .bio__fact {
+              text-align: left;
+              margin-left: 20px;
+          }
+      }
+  }
+
+  .full-bio {
+      @media (min-width: 768px) {
+          display: none;
+      }
+
+      .bio__fact {
+          margin-top: 40px;
+
+          &:nth-child(2n +1) {
+              clear: left;
+          }
+      }
+  }
+
+  &__fact {
+      text-align: center;
+      font-size: 20px;
+  }
+}

@@ -1,0 +1,53 @@
+﻿.jumbo-background {
+    padding-bottom: 100vh;
+    height: calc(100vh - 70px);
+    background-image: url('../assets/hero.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+
+    @media (min-width: 992px) {
+        padding-bottom: 0;
+    }
+
+    @media (min-width: 1500px) {
+        background-position: 90%;
+    }
+}
+
+.jumbo-presentation {
+    background-color: black;
+    padding-top: 50px;
+    color: #eee;
+    box-sizing: content-box;
+    text-align: center;
+
+    @media (min-width: 700px) {
+        padding-top: 80px;
+        .image-container {
+            height: calc(100vh - 80px);
+        }
+    }
+
+    @media (min-width: 992px) {
+        box-sizing: border-box;
+        text-align: left;
+    }
+
+    .image-container {
+        height: calc(100vh - 50px);
+    }
+
+    h1 {
+        margin-bottom: 40px;
+        font-size: 30px;
+        color: #eee;
+
+        @media (min-width: 700px) {
+            font-size: 40px;
+        }
+    }
+    .btn {
+        margin-top: 80px;
+    }
+}

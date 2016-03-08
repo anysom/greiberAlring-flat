@@ -1,0 +1,27 @@
+.btn {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out;
+
+    &--default {
+        color: white;
+        background-color: $color-primary;
+        border-color: $color-primary-dark;
+  
+      &:hover {
+        color: white;
+        background-color: $color-primary-dark;
+      }
+    }
+
+    &--inverse {
+        color: $color-primary;
+        border: 2px solid $color-primary;
+        background-color: transparent;
+
+        &:hover {
+            background-color: white;
+        }
+    }
+}

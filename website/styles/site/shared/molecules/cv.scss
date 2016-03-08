@@ -1,0 +1,27 @@
+﻿.cv {
+    &__section {
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto 80px;
+    }
+
+
+    &__item {
+        position: relative;
+        margin-bottom: 20px;
+
+        p {
+              margin-left: 120px;
+
+              @media (min-width: 768px) {
+                  margin-left: 180px;
+              }              
+        }
+
+        .year {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}

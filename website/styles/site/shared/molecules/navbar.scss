@@ -1,0 +1,31 @@
+﻿.navbar {
+  background-color: $color-primary;
+  border-color: $color-primary-dark;
+  
+  .navbar-nav {  
+    a {
+      transition: background-color 0.3s ease-in-out;
+      &:hover {
+        background-color: $color-primary-dark;
+      }
+    }
+    
+    .active a {
+      background-color: $color-primary-dark;
+    }
+  }
+  
+  a {
+    color: white;
+  }
+}
+
+
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: white;
+}

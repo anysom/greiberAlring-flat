@@ -1,0 +1,29 @@
+// Colors
+//
+// A push button.
+// the buttons has the following modifiers:
+//
+// $color-main - the main color
+// $color-alert - the alert color
+// $color-text-main - the main text color
+//
+// markup:
+// <div style="background: {$modifiers};" class="styleguide-color">{$modifiers}</div>
+//
+// Styleguide 1.1
+
+
+//red theme
+$color-primary: #8C283E;
+$color-primary-dark: darken($color-primary, 10%);
+$color-primary-light: lighten($color-primary, 10%);
+
+
+/* Base Font size */
+$bf: 14px;
+$bf-large: 16px;
+
+
+/* Some set breakpoints - these are not THE breakpoints - content dictates breakpoints! */
+/* These are just some breakpoints that we know we will use throughout the site */
+$bp-small: 720px;

@@ -1,0 +1,35 @@
+﻿
+.contact__media {
+  margin-bottom: 20px;
+
+  > * {
+    display: inline-block;
+    vertical-align: middle;
+    
+    &:first-child {
+      margin-right: 20px;
+    }
+  }
+
+  a {
+      &:hover {
+          color: white;
+          text-decoration: underline;
+      }
+  }
+}
+
+.contact-col {
+    margin-bottom: 80px;
+}
+
+.temp-contact-container {
+    .contact__media {
+        text-align: center;
+        
+        .icon {
+            display:block;
+            margin: 0 auto 20px;
+        }
+    }
+}
